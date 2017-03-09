@@ -12,7 +12,7 @@ gulp.task('mover-html', function(){
 			.pipe(gulp.dest('./dist'))
 });
 
-gulp.task('background', function(){
+gulp.task('tarefas-background', function(){
 	gulp.watch('./source/scss/*.scss', ['compilar-css']);
 	gulp.watch('./source/index.html', ['mover-html']);
 });
